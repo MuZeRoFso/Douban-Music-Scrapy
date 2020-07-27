@@ -15,13 +15,6 @@ BOT_NAME = 'doubanmusic'
 SPIDER_MODULES = ['doubanmusic.spiders']
 NEWSPIDER_MODULE = 'doubanmusic.spiders'
 
-# 开启log日志功能
-LOG_LEVEL = 'DEBUG'
-TODAY = datetime.now()
-log_file_path = 'Log/scrapy_{}{:0>2}{:0>2}_{:0>2}{:0>2}{:0>2}.log'.format(TODAY.year, TODAY.month, TODAY.day,
-                                                                          TODAY.hour, TODAY.minute, TODAY.second)
-LOG_FILE = log_file_path
-
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'doubanmusic (+http://www.yourdomain.com)'
 
