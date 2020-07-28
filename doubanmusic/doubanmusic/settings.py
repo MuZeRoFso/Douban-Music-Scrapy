@@ -85,6 +85,7 @@ ITEM_PIPELINES = {
     'doubanmusic.pipelines2excel.DoubanmusicPipeline': 302,
     'doubanmusic.pipelines2mysql.DoubanmusicPipeline': 303,
     'doubanmusic.pipelines2pic.DoubanmusicPipeline': 304,
+    'doubanmusic.pipelines2xml.DoubanmusicPipeline': 305,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
