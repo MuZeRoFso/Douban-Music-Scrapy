@@ -62,7 +62,9 @@ ROBOTSTXT_OBEY = True
 DOWNLOADER_MIDDLEWARES = {
     'doubanmusic.middlewares.DoubanmusicDownloaderMiddleware': 543,
     'scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware': None,
-    'doubanmusic.rotate_useragent.RotateUserAgentMiddleware': 400
+    'doubanmusic.rotate_useragent.RotateUserAgentMiddleware': 400,
+    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 123,
+    'doubanmusic.ipMiddlewares.IPPOOlS': 125
 }
 
 # Enable or disable extensions
@@ -101,3 +103,10 @@ ITEM_PIPELINES = {
 # HTTPCACHE_DIR = 'httpcache'
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+# 配置IP池 IP代理来源:https://www.kuaidaili.com/free/  http://www.xiladaili.com/
+IPPOOL = [
+    {'ipaddr': '131.108.84.14:8080'},
+    {'ipaddr': '115.221.243.137:9999'},
+    {'ipaddr': '171.13.137.168:9999'},
+]

@@ -4,7 +4,6 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-import os
 import urllib
 
 
@@ -23,11 +22,11 @@ class DoubanmusicPipeline(object):
         # 设置图片名字
         pic_type = pic_url.split('.')[-1]
         pic_name = item['title'] + '.' + pic_type
-        print('>>开始下载',pic_name)
+        print('>>开始下载', pic_name)
         try:
             # 开始下载图片
             urllib.request.urlretrieve(pic_url, self.folderName + "/%s" % pic_name)
         except Exception as e:
-            print('下载出现错误: ',str(e))
+            print('下载出现错误: ', str(e))
 
         return item
