@@ -30,4 +30,12 @@ class MusicspiderSpider(scrapy.Spider):
             music['style'] = desclist[4] if len(desclist) == 5 else '暂无'
             music['score'] = item.xpath('td[2]/div/div/span[2]/text()').extract()[0]
             music['pic_url'] = item.xpath('td[1]/a/img/@src').extract()[0]
+            # 封装music为生成器
+            yield music
+            # 自动翻页 实现深度采集top250
+            nextPage = response.xpath("//span[@class='next']/a/@href").extract()
+            # 判断nextPage是否有效
+            if nextPage:
+                # 有效的话 向url发送请求
+                yield scrapy.Request(nextPage[0], self.parse)
         pass

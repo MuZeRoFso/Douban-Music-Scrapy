@@ -15,6 +15,13 @@ BOT_NAME = 'doubanmusic'
 SPIDER_MODULES = ['doubanmusic.spiders']
 NEWSPIDER_MODULE = 'doubanmusic.spiders'
 
+# 开启log日志功能
+LOG_LEVEL = 'DEBUG'
+TODAY = datetime.now()
+log_file_path = 'Log/scrapy_{}{:0>2}{:0>2}_{:0>2}{:0>2}{:0>2}.log'.format(TODAY.year, TODAY.month, TODAY.day,
+                                                                          TODAY.hour, TODAY.minute, TODAY.second)
+LOG_FILE = log_file_path
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'doubanmusic (+http://www.yourdomain.com)'
 
@@ -71,6 +78,7 @@ ITEM_PIPELINES = {
     'doubanmusic.pipelines2json.DoubanmusicPipeline': 301,
     'doubanmusic.pipelines2excel.DoubanmusicPipeline': 302,
     'doubanmusic.pipelines2mysql.DoubanmusicPipeline': 303,
+    'doubanmusic.pipelines2pic.DoubanmusicPipeline': 304,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
