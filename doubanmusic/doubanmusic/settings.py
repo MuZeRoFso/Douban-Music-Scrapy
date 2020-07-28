@@ -22,6 +22,12 @@ log_file_path = 'Log/scrapy_{}{:0>2}{:0>2}_{:0>2}{:0>2}{:0>2}.log'.format(TODAY.
                                                                           TODAY.hour, TODAY.minute, TODAY.second)
 LOG_FILE = log_file_path
 
+# 开启随机时间间隔 相对而言降低封锁IP的风险
+# DOWNLOAD_DELAY单位为s(秒)
+DOWNLOAD_DELAY = 4
+# RANDOMIZE_DOWNLOAD_DELAY会取一随机数与DOWNLOAD_DELAY相乘 才是最后实际的延迟
+RANDOMIZE_DOWNLOAD_DELAY = True
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'doubanmusic (+http://www.yourdomain.com)'
 
@@ -62,7 +68,7 @@ ROBOTSTXT_OBEY = True
 DOWNLOADER_MIDDLEWARES = {
     'doubanmusic.middlewares.DoubanmusicDownloaderMiddleware': 543,
     'scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware': None,
-    'doubanmusic.rotate_useragent.RotateUserAgentMiddleware': 400
+    'doubanmusic.rotate_useragent.RotateUserAgentMiddleware': 400,
 }
 
 # Enable or disable extensions
