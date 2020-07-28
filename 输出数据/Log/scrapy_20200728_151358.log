@@ -1,0 +1,2334 @@
+2020-07-28 15:13:58 [scrapy.utils.log] INFO: Scrapy 2.2.1 started (bot: doubanmusic)
+2020-07-28 15:13:58 [scrapy.utils.log] INFO: Versions: lxml 4.5.2.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.7 (default, May  6 2020, 11:45:54) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Windows-10-10.0.18362-SP0
+2020-07-28 15:13:58 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-07-28 15:13:58 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'doubanmusic',
+ 'DOWNLOAD_DELAY': 4,
+ 'LOG_FILE': 'Log/scrapy_20200728_151358.log',
+ 'NEWSPIDER_MODULE': 'doubanmusic.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['doubanmusic.spiders']}
+2020-07-28 15:13:58 [scrapy.extensions.telnet] INFO: Telnet Password: fd152b6e056fb9d9
+2020-07-28 15:13:58 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-07-28 15:13:59 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'doubanmusic.rotate_useragent.RotateUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'doubanmusic.middlewares.DoubanmusicDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-07-28 15:13:59 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-07-28 15:13:59 [scrapy.middleware] INFO: Enabled item pipelines:
+['doubanmusic.pipelines.DoubanmusicPipeline',
+ 'doubanmusic.pipelines2json.DoubanmusicPipeline',
+ 'doubanmusic.pipelines2excel.DoubanmusicPipeline',
+ 'doubanmusic.pipelines2mysql.DoubanmusicPipeline',
+ 'doubanmusic.pipelines2pic.DoubanmusicPipeline']
+2020-07-28 15:13:59 [scrapy.core.engine] INFO: Spider opened
+2020-07-28 15:13:59 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-07-28 15:13:59 [musicspider] INFO: Spider opened: musicspider
+2020-07-28 15:13:59 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-07-28 15:13:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.douban.com/robots.txt> (referer: None)
+2020-07-28 15:14:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.douban.com/top250> (referer: None)
+2020-07-28 15:14:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': 'Import',
+ 'author': 'Jason Mraz',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2967252.jpg',
+ 'publish': '2008-05-13',
+ 'score': '9.1',
+ 'style': '民谣',
+ 'title': 'We Sing. We Dance. We Steal Things.'}
+2020-07-28 15:14:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '专辑',
+ 'author': 'Coldplay',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3054604.jpg',
+ 'publish': '2008-06-17',
+ 'score': '8.7',
+ 'style': '摇滚',
+ 'title': 'Viva La Vida'}
+2020-07-28 15:14:04 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://music.douban.com/top250?start=25> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2020-07-28 15:14:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '专辑',
+ 'author': '陈绮贞',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s1441645.jpg',
+ 'publish': '2005-09-23',
+ 'score': '8.9',
+ 'style': '流行',
+ 'title': '华丽的冒险'}
+2020-07-28 15:14:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '专辑',
+ 'author': '周杰伦',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3750422.jpg',
+ 'publish': '2001-09-14',
+ 'score': '9.2',
+ 'style': '流行',
+ 'title': '范特西'}
+2020-07-28 15:14:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '专辑',
+ 'author': '五月天',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s3316597.jpg',
+ 'publish': '2008-10-23',
+ 'score': '8.8',
+ 'style': '摇滚',
+ 'title': '後。青春期的詩'}
+2020-07-28 15:14:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '专辑',
+ 'author': '孙燕姿',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s4653287.jpg',
+ 'publish': '2011-03-08',
+ 'score': '8.6',
+ 'style': '流行',
+ 'title': '是时候'}
+2020-07-28 15:14:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '专辑',
+ 'author': 'Lenka',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3259484.jpg',
+ 'publish': '2008-09-23',
+ 'score': '8.5',
+ 'style': '流行',
+ 'title': 'Lenka'}
+2020-07-28 15:14:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '专辑',
+ 'author': '王若琳',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s2874587.jpg',
+ 'publish': '2008-01-11',
+ 'score': '8.7',
+ 'style': '爵士',
+ 'title': 'Start from Here'}
+2020-07-28 15:14:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '单曲',
+ 'author': '陈绮贞',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2617173.jpg',
+ 'publish': '2004-02-02',
+ 'score': '9.2',
+ 'style': '流行',
+ 'title': '旅行的意义'}
+2020-07-28 15:14:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '专辑',
+ 'author': '陈绮贞',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s3570839.jpg',
+ 'publish': '2009-01-22',
+ 'score': '8.6',
+ 'style': '流行',
+ 'title': '太阳'}
+2020-07-28 15:14:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': 'Soundtrack',
+ 'author': 'Glen Hansard,Marketa Irglova',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2821080.jpg',
+ 'publish': '2007-05-22',
+ 'score': '9.1',
+ 'style': '原声',
+ 'title': 'Once (Soundtrack)'}
+2020-07-28 15:14:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': 'Import',
+ 'author': 'Keren Ann',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s1431228.jpg',
+ 'publish': '2004-08-24',
+ 'score': '8.9',
+ 'style': '民谣',
+ 'title': 'Not Going Anywhere'}
+2020-07-28 15:14:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': 'Explicit Lyrics',
+ 'author': 'Green Day',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1485602.jpg',
+ 'publish': '2004-09-21',
+ 'score': '8.9',
+ 'style': '摇滚',
+ 'title': 'American Idiot'}
+2020-07-28 15:14:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '专辑',
+ 'author': '张震岳 Csun Yuk',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s2591057.jpg',
+ 'publish': '2007-07-06',
+ 'score': '8.8',
+ 'style': '流行',
+ 'title': '思念是一种病'}
+2020-07-28 15:14:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '专辑',
+ 'author': '苏打绿',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2757483.jpg',
+ 'publish': '2007-11-02',
+ 'score': '8.6',
+ 'style': '流行',
+ 'title': '無與倫比的美麗'}
+2020-07-28 15:14:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '专辑',
+ 'author': '张悬',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2604331.jpg',
+ 'publish': '2007-07-20',
+ 'score': '8.5',
+ 'style': '流行',
+ 'title': '亲爱的...我还不知道'}
+2020-07-28 15:14:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '专辑',
+ 'author': '张悬',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3786340.jpg',
+ 'publish': '2009-05-22',
+ 'score': '8.3',
+ 'style': '流行',
+ 'title': '城市'}
+2020-07-28 15:14:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '专辑',
+ 'author': 'Damien Rice',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s2838077.jpg',
+ 'publish': '2003',
+ 'score': '9.1',
+ 'style': '流行',
+ 'title': 'O'}
+2020-07-28 15:14:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '单曲',
+ 'author': 'Green Day',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s3572868.jpg',
+ 'publish': '2005-06-13',
+ 'score': '9.3',
+ 'style': '摇滚',
+ 'title': 'Wake Me Up When September Ends'}
+2020-07-28 15:14:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '专辑',
+ 'author': '周杰伦',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3737082.jpg',
+ 'publish': '2003-07-31',
+ 'score': '8.5',
+ 'style': '流行',
+ 'title': '叶惠美'}
+2020-07-28 15:14:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '专辑',
+ 'author': '周杰伦',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3737076.jpg',
+ 'publish': '2004',
+ 'score': '8.1',
+ 'style': '流行',
+ 'title': '七里香'}
+2020-07-28 15:14:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '专辑',
+ 'author': 'Adele',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s4527315.jpg',
+ 'publish': '2011-02-01',
+ 'score': '9.0',
+ 'style': '流行',
+ 'title': '21'}
+2020-07-28 15:14:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '专辑',
+ 'author': '张悬',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s1884457.jpg',
+ 'publish': '2006-06-09',
+ 'score': '8.6',
+ 'style': '流行',
+ 'title': 'My Life Will...'}
+2020-07-28 15:14:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '专辑',
+ 'author': '王菲',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3336480.jpg',
+ 'publish': '2000',
+ 'score': '9.3',
+ 'style': '流行',
+ 'title': '寓言'}
+2020-07-28 15:14:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250>
+{'album': '专辑',
+ 'author': '苏打绿',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s6987806.jpg',
+ 'publish': '2011-11-11',
+ 'score': '8.9',
+ 'style': '流行',
+ 'title': '你在煩惱什麼'}
+2020-07-28 15:14:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.douban.com/top250?start=25> (referer: https://music.douban.com/top250)
+2020-07-28 15:14:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': '专辑',
+ 'author': '林宥嘉',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s4039591.jpg',
+ 'publish': '2009-10-30',
+ 'score': '8.7',
+ 'style': '流行',
+ 'title': '感官/世界'}
+2020-07-28 15:14:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': '专辑',
+ 'author': 'Nirvana',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1632580.jpg',
+ 'publish': '1991',
+ 'score': '9.2',
+ 'style': '摇滚',
+ 'title': 'Nevermind'}
+2020-07-28 15:14:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': '专辑',
+ 'author': '周杰伦',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s4598636.jpg',
+ 'publish': '2002-07-19',
+ 'score': '8.5',
+ 'style': '流行',
+ 'title': '八度空间'}
+2020-07-28 15:14:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': '专辑',
+ 'author': '周杰伦',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s8932514.jpg',
+ 'publish': '2000-11-13',
+ 'score': '8.9',
+ 'style': '流行',
+ 'title': 'Jay'}
+2020-07-28 15:14:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': '专辑',
+ 'author': 'Coldplay',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1400723.jpg',
+ 'publish': '2000-07-10',
+ 'score': '9.0',
+ 'style': '摇滚',
+ 'title': 'Parachutes'}
+2020-07-28 15:14:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': '专辑',
+ 'author': '孙燕姿',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3524071.jpg',
+ 'publish': '2000-12-7',
+ 'score': '8.9',
+ 'style': '流行',
+ 'title': '我要的幸福'}
+2020-07-28 15:14:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': '专辑',
+ 'author': '陈绮贞',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s27076587.jpg',
+ 'publish': '2000',
+ 'score': '9.0',
+ 'style': '流行',
+ 'title': '还是会寂寞'}
+2020-07-28 15:14:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': 'Enhanced',
+ 'author': 'Avril Lavigne',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2652911.jpg',
+ 'publish': '2002',
+ 'score': '8.8',
+ 'style': '摇滚',
+ 'title': 'Let Go'}
+2020-07-28 15:14:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': '专辑',
+ 'author': '周杰伦',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s1456874.jpg',
+ 'publish': '2005-11-01',
+ 'score': '7.9',
+ 'style': '流行',
+ 'title': '十一月的萧邦'}
+2020-07-28 15:14:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': '专辑',
+ 'author': '方大同',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s3405037.jpg',
+ 'publish': '2008-12-19',
+ 'score': '8.5',
+ 'style': '放克/灵歌/R&B',
+ 'title': '橙月'}
+2020-07-28 15:14:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': '专辑',
+ 'author': '苏打绿',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s1883654.jpg',
+ 'publish': '2006-10-20',
+ 'score': '8.7',
+ 'style': '流行',
+ 'title': '小宇宙'}
+2020-07-28 15:14:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': '专辑',
+ 'author': '蔡健雅',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3942165.jpg',
+ 'publish': '2009-08-19',
+ 'score': '8.0',
+ 'style': '流行',
+ 'title': '若你碰到他'}
+2020-07-28 15:14:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': 'Import',
+ 'author': 'Lady & Bird',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2376100.jpg',
+ 'publish': '2003',
+ 'score': '8.8',
+ 'style': '民谣',
+ 'title': 'Lady & Bird'}
+2020-07-28 15:14:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': '专辑',
+ 'author': '万能青年旅店',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s4614409.jpg',
+ 'publish': '2010-11-12',
+ 'score': '9.1',
+ 'style': '摇滚',
+ 'title': '万能青年旅店'}
+2020-07-28 15:14:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': 'Enhanced',
+ 'author': 'Linkin Park',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s1401378.jpg',
+ 'publish': '2003-03-25',
+ 'score': '9.0',
+ 'style': '摇滚',
+ 'title': 'Meteora'}
+2020-07-28 15:14:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': 'Explicit Lyrics',
+ 'author': 'James Blunt',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1461123.jpg',
+ 'publish': '2004',
+ 'score': '8.9',
+ 'style': '流行',
+ 'title': 'Back To Bedlam'}
+2020-07-28 15:14:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': '国语',
+ 'author': '苏打绿,蘇打綠',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2360790.jpg',
+ 'publish': '2005年9月',
+ 'score': '8.6',
+ 'style': '流行',
+ 'title': '苏打绿同名专辑'}
+2020-07-28 15:14:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': '专辑',
+ 'author': '梁静茹',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3551584.jpg',
+ 'publish': '2009-01-16',
+ 'score': '8.4',
+ 'style': '流行',
+ 'title': '静茹&情歌 别再为他流泪'}
+2020-07-28 15:14:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': '专辑',
+ 'author': '林宥嘉',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s6201192.jpg',
+ 'publish': '2011-05-06',
+ 'score': '8.6',
+ 'style': '流行',
+ 'title': '美妙生活'}
+2020-07-28 15:14:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': 'Soundtrack',
+ 'author': 'Yann Tiersen',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s2881998.jpg',
+ 'publish': '2001-04-23',
+ 'score': '9.3',
+ 'style': '原声',
+ 'title': "Le Fabuleux destin d'Amélie Poulain"}
+2020-07-28 15:14:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': '专辑',
+ 'author': '王若琳',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3550503.jpg',
+ 'publish': '2009-01-16',
+ 'score': '8.1',
+ 'style': '爵士',
+ 'title': 'Joanna & 王若琳'}
+2020-07-28 15:14:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': 'Import',
+ 'author': 'Tamas Wells',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2783063.jpg',
+ 'publish': '2006',
+ 'score': '9.0',
+ 'style': '民谣',
+ 'title': 'A Plea En Vendredi'}
+2020-07-28 15:14:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': '专辑',
+ 'author': '田馥甄 Hebe',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s4466905.jpg',
+ 'publish': '2010-09-03',
+ 'score': '8.0',
+ 'style': '流行',
+ 'title': 'To Hebe'}
+2020-07-28 15:14:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': 'Import',
+ 'author': '孙燕姿',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s2333326.jpg',
+ 'publish': '2007-03-22',
+ 'score': '8.3',
+ 'style': '流行',
+ 'title': '逆光'}
+2020-07-28 15:14:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=25>
+{'album': 'Import',
+ 'author': '王菲',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s3390958.jpg',
+ 'publish': '1999-09-10',
+ 'score': '9.3',
+ 'style': '流行',
+ 'title': '只爱陌生人'}
+2020-07-28 15:14:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.douban.com/top250?start=50> (referer: https://music.douban.com/top250?start=25)
+2020-07-28 15:14:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '引进版',
+ 'author': 'Chris Garneau',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s1989094.jpg',
+ 'publish': '2007-01-23',
+ 'score': '8.7',
+ 'style': '民谣',
+ 'title': 'Music For Tourists'}
+2020-07-28 15:14:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '专辑',
+ 'author': '孙燕姿',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2794840.jpg',
+ 'publish': '2003-08-22',
+ 'score': '9.0',
+ 'style': '流行',
+ 'title': 'The Moment'}
+2020-07-28 15:14:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '选集',
+ 'author': '陈奕迅',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3169796.jpg',
+ 'publish': '2003-11-20',
+ 'score': '9.4',
+ 'style': '流行',
+ 'title': '七'}
+2020-07-28 15:14:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '专辑',
+ 'author': '苏打绿',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s3763169.jpg',
+ 'publish': '2009-05-08',
+ 'score': '8.0',
+ 'style': '民谣',
+ 'title': '春·日光'}
+2020-07-28 15:14:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '专辑',
+ 'author': '盧廣仲',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s3128207.jpg',
+ 'publish': '2008-5-27',
+ 'score': '8.3',
+ 'style': '民谣',
+ 'title': '100种生活'}
+2020-07-28 15:14:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '专辑',
+ 'author': '梁静茹',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s2758489.jpg',
+ 'publish': '2007-11-09',
+ 'score': '8.4',
+ 'style': '流行',
+ 'title': '崇拜'}
+2020-07-28 15:14:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '选集',
+ 'author': '陈绮贞',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3232974.jpg',
+ 'publish': '2005',
+ 'score': '9.2',
+ 'style': '民谣',
+ 'title': '陈绮贞精选'}
+2020-07-28 15:14:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '专辑',
+ 'author': 'Joe Hisaishi',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3272681.jpg',
+ 'publish': '1999-05-19',
+ 'score': '9.4',
+ 'style': '原声',
+ 'title': '菊次郎の夏'}
+2020-07-28 15:14:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': 'Enhanced',
+ 'author': 'Taylor Swift',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3315133.jpg',
+ 'publish': '2008-11-11',
+ 'score': '8.4',
+ 'style': '流行',
+ 'title': 'Fearless'}
+2020-07-28 15:14:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '专辑',
+ 'author': 'Mika',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2657592.jpg',
+ 'publish': '2007-02-05',
+ 'score': '8.8',
+ 'style': '流行',
+ 'title': 'Life In Cartoon Motion'}
+2020-07-28 15:14:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '专辑',
+ 'author': '陈奕迅',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3666735.jpg',
+ 'publish': '2009-03-23',
+ 'score': '8.5',
+ 'style': '流行',
+ 'title': 'H³M'}
+2020-07-28 15:14:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '专辑',
+ 'author': '林宥嘉',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3113075.jpg',
+ 'publish': '2008-06-03',
+ 'score': '8.4',
+ 'style': '流行',
+ 'title': '神秘嘉宾'}
+2020-07-28 15:14:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': 'Soundtrack',
+ 'author': 'Bruno Coulais',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s1400055.jpg',
+ 'publish': '2004-05-03',
+ 'score': '9.4',
+ 'style': '原声',
+ 'title': 'Les Choristes'}
+2020-07-28 15:14:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '专辑',
+ 'author': '范晓萱&100%',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3902012.jpg',
+ 'publish': '2009-08-10',
+ 'score': '8.1',
+ 'style': '流行',
+ 'title': '赤子'}
+2020-07-28 15:14:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '专辑',
+ 'author': 'Damien Rice',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1831581.jpg',
+ 'publish': '2006-11-06',
+ 'score': '8.9',
+ 'style': '民谣',
+ 'title': '9'}
+2020-07-28 15:14:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '专辑',
+ 'author': '王菲',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2726841.jpg',
+ 'publish': '2003',
+ 'score': '8.7',
+ 'style': '流行',
+ 'title': '将爱'}
+2020-07-28 15:14:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '专辑',
+ 'author': '曹方',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1462740.jpg',
+ 'publish': '2005年12月',
+ 'score': '8.4',
+ 'style': '流行',
+ 'title': '遇见我'}
+2020-07-28 15:14:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '专辑',
+ 'author': '李志',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s3743777.jpg',
+ 'publish': '2007-01-11',
+ 'score': '8.9',
+ 'style': '民谣',
+ 'title': '梵高先生'}
+2020-07-28 15:14:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '自选集',
+ 'author': '方大同',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s27078161.jpg',
+ 'publish': '2009-08-11',
+ 'score': '8.3',
+ 'style': '放克/灵歌/R&B',
+ 'title': 'Timeless 可啦思刻'}
+2020-07-28 15:14:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '专辑',
+ 'author': '周杰伦',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s1943885.jpg',
+ 'publish': '2006-09-05',
+ 'score': '7.7',
+ 'style': '流行',
+ 'title': '依然范特西'}
+2020-07-28 15:14:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '专辑',
+ 'author': '孙燕姿',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s6569456.jpg',
+ 'publish': '2001-07-09',
+ 'score': '8.8',
+ 'style': '流行',
+ 'title': '风筝'}
+2020-07-28 15:14:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '专辑',
+ 'author': '孙燕姿',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3524062.jpg',
+ 'publish': '2005-10-07',
+ 'score': '8.1',
+ 'style': '流行',
+ 'title': '完美的一天'}
+2020-07-28 15:14:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': 'Import',
+ 'author': 'The Weepies',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s4043738.jpg',
+ 'publish': '2006',
+ 'score': '8.5',
+ 'style': '民谣',
+ 'title': 'Say I Am You'}
+2020-07-28 15:14:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': '专辑',
+ 'author': '陶喆',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s27077858.jpg',
+ 'publish': '2002',
+ 'score': '8.8',
+ 'style': '流行',
+ 'title': '黑色柳丁'}
+2020-07-28 15:14:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=50>
+{'album': 'Import',
+ 'author': 'Avril Lavigne',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s4716897.jpg',
+ 'publish': '2004-05-12',
+ 'score': '8.5',
+ 'style': '摇滚',
+ 'title': 'Under My Skin'}
+2020-07-28 15:14:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.douban.com/top250?start=75> (referer: https://music.douban.com/top250?start=50)
+2020-07-28 15:14:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': '专辑',
+ 'author': '孙燕姿',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1418840.jpg',
+ 'publish': '2004-10-1',
+ 'score': '8.6',
+ 'style': '流行',
+ 'title': 'Stefanie'}
+2020-07-28 15:14:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': 'Import',
+ 'author': 'Lady Gaga',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3224590.jpg',
+ 'publish': '2008-08-19',
+ 'score': '8.3',
+ 'style': '流行',
+ 'title': 'The Fame'}
+2020-07-28 15:14:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': 'Import',
+ 'author': 'Jason Mraz',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2761461.jpg',
+ 'publish': '2005-07-04',
+ 'score': '9.0',
+ 'style': '流行',
+ 'title': 'Mr. A-Z'}
+2020-07-28 15:14:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': '引进版',
+ 'author': '五月天',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1959251.jpg',
+ 'publish': '2006-12-28',
+ 'score': '8.4',
+ 'style': '流行',
+ 'title': '为爱而生'}
+2020-07-28 15:14:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': '专辑',
+ 'author': 'Daniel Powter',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s1661548.jpg',
+ 'publish': '2006',
+ 'score': '8.6',
+ 'style': '流行',
+ 'title': 'Daniel Powter'}
+2020-07-28 15:14:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': 'Single',
+ 'author': 'Jason Mraz',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s9074663.jpg',
+ 'publish': '2008-12-16',
+ 'score': '9.4',
+ 'style': '民谣',
+ 'title': "I'm Yours"}
+2020-07-28 15:14:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': '专辑',
+ 'author': 'My Little Airport',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s2552894.jpg',
+ 'publish': '2004-08-07',
+ 'score': '8.2',
+ 'style': '流行',
+ 'title': '在动物园散步才是正经事'}
+2020-07-28 15:14:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': '专辑',
+ 'author': '许巍 Wei Xu',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3839391.jpg',
+ 'publish': '2002-12-01',
+ 'score': '8.9',
+ 'style': '民谣',
+ 'title': '时光·漫步'}
+2020-07-28 15:14:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': '专辑',
+ 'author': '朴树',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s1966937.jpg',
+ 'publish': '2003-11-28',
+ 'score': '8.6',
+ 'style': '流行',
+ 'title': '生如夏花'}
+2020-07-28 15:14:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': '专辑',
+ 'author': '周杰伦',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2753832.jpg',
+ 'publish': '2007-11-01',
+ 'score': '7.3',
+ 'style': '流行',
+ 'title': '我很忙'}
+2020-07-28 15:14:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': '专辑',
+ 'author': '苏打绿',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3967123.jpg',
+ 'publish': '2009-09-11',
+ 'score': '8.3',
+ 'style': '摇滚',
+ 'title': '夏 / 狂热'}
+2020-07-28 15:14:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': '专辑',
+ 'author': '范晓萱',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s11363103.jpg',
+ 'publish': '2001-08-25',
+ 'score': '8.8',
+ 'style': '爵士',
+ 'title': '绝世名伶'}
+2020-07-28 15:14:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': '专辑',
+ 'author': '曹方',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s4052811.jpg',
+ 'publish': '2009-11-11',
+ 'score': '8.1',
+ 'style': '流行',
+ 'title': '哼一首歌 等日落'}
+2020-07-28 15:14:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': '专辑',
+ 'author': '孙燕姿',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3524013.jpg',
+ 'publish': '2003-01-10',
+ 'score': '8.6',
+ 'style': '流行',
+ 'title': '未完成'}
+2020-07-28 15:14:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': '专辑',
+ 'author': 'Radiohead',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s2789048.jpg',
+ 'publish': '1997',
+ 'score': '9.2',
+ 'style': '摇滚',
+ 'title': 'OK Computer'}
+2020-07-28 15:14:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': '专辑',
+ 'author': 'Lana Del Rey',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s7047247.jpg',
+ 'publish': '2012-01-31',
+ 'score': '8.6',
+ 'style': '流行',
+ 'title': 'Born to Die'}
+2020-07-28 15:14:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': '专辑',
+ 'author': 'Pink Floyd',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s2413665.jpg',
+ 'publish': '1979',
+ 'score': '9.2',
+ 'style': '摇滚',
+ 'title': 'The Wall'}
+2020-07-28 15:14:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': '专辑',
+ 'author': '痛仰',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3523286.jpg',
+ 'publish': '2008-10',
+ 'score': '8.6',
+ 'style': '摇滚',
+ 'title': '不要停止我的音乐'}
+2020-07-28 15:14:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': '专辑',
+ 'author': 'Linkin Park',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s2838195.jpg',
+ 'publish': '2000',
+ 'score': '8.9',
+ 'style': '摇滚',
+ 'title': 'Hybrid Theory'}
+2020-07-28 15:14:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': 'Live',
+ 'author': 'Nirvana',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3158430.jpg',
+ 'publish': '1994-11-01',
+ 'score': '9.5',
+ 'style': '摇滚',
+ 'title': 'MTV Unplugged in New York'}
+2020-07-28 15:14:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': 'EP',
+ 'author': '陈绮贞',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s4711982.jpg',
+ 'publish': '2004年12月',
+ 'score': '9.2',
+ 'style': '流行',
+ 'title': 'After 17'}
+2020-07-28 15:14:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': '专辑',
+ 'author': 'Jack Johnson',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s4346679.jpg',
+ 'publish': '2005-03-22',
+ 'score': '9.0',
+ 'style': '民谣',
+ 'title': 'In Between Dreams'}
+2020-07-28 15:14:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': '专辑',
+ 'author': '五月天 Mayday',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3586961.jpg',
+ 'publish': '2004-11-05',
+ 'score': '8.9',
+ 'style': '流行',
+ 'title': '神的孩子都在跳舞'}
+2020-07-28 15:14:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': '专辑',
+ 'author': '五月天',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s27078194.jpg',
+ 'publish': '2007-07-20',
+ 'score': '8.7',
+ 'style': '流行',
+ 'title': '离开地球表面Jump!'}
+2020-07-28 15:14:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=75>
+{'album': '专辑',
+ 'author': '陈奕迅',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3146476.jpg',
+ 'publish': '2008-06-30',
+ 'score': '8.3',
+ 'style': '流行',
+ 'title': '不想放手'}
+2020-07-28 15:14:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.douban.com/top250?start=100> (referer: https://music.douban.com/top250?start=75)
+2020-07-28 15:14:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': '单曲',
+ 'author': '曲婉婷',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s9127241.jpg',
+ 'publish': '2010-02-24',
+ 'score': '9.2',
+ 'style': '流行',
+ 'title': '我的歌声里'}
+2020-07-28 15:14:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': 'Soundtrack',
+ 'author': 'Ennio Morricone',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1426141.jpg',
+ 'publish': '1999-10-12',
+ 'score': '9.4',
+ 'style': '原声',
+ 'title': 'The Legend of 1900'}
+2020-07-28 15:14:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': '专辑',
+ 'author': '张楚',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3266121.jpg',
+ 'publish': '1994',
+ 'score': '9.1',
+ 'style': '摇滚',
+ 'title': '孤独的人是可耻的'}
+2020-07-28 15:14:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': '专辑',
+ 'author': '徐佳莹',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3819180.jpg',
+ 'publish': '2009-05-29',
+ 'score': '8.2',
+ 'style': '流行',
+ 'title': '徐佳瑩La La首张创作专辑'}
+2020-07-28 15:14:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': 'Import',
+ 'author': 'Avril Lavigne',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2362973.jpg',
+ 'publish': '2007-04-17',
+ 'score': '7.7',
+ 'style': '摇滚',
+ 'title': 'The Best Damn Thing'}
+2020-07-28 15:14:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': '专辑',
+ 'author': '五月天',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s1443616.jpg',
+ 'publish': '2005-11-18',
+ 'score': '9.1',
+ 'style': '摇滚',
+ 'title': '知足 just my pride 最真杰作选'}
+2020-07-28 15:14:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': '专辑',
+ 'author': 'The Beatles',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1400070.jpg',
+ 'publish': '2000',
+ 'score': '9.4',
+ 'style': '摇滚',
+ 'title': '1'}
+2020-07-28 15:14:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': '专辑',
+ 'author': '周杰伦',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3292023.jpg',
+ 'publish': '2008-10-09',
+ 'score': '6.9',
+ 'style': '流行',
+ 'title': '魔杰座'}
+2020-07-28 15:14:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': '专辑',
+ 'author': 'Coldplay',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1400630.jpg',
+ 'publish': '2005-06-07',
+ 'score': '8.4',
+ 'style': '摇滚',
+ 'title': 'X&Y'}
+2020-07-28 15:14:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': 'Import',
+ 'author': 'Adele',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2841982.jpg',
+ 'publish': '2008-01-28',
+ 'score': '8.3',
+ 'style': '放克/灵歌/R&B',
+ 'title': '19'}
+2020-07-28 15:14:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': '专辑',
+ 'author': 'My Little Airport',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2722802.jpg',
+ 'publish': '2007-10-10',
+ 'score': '8.1',
+ 'style': '流行',
+ 'title': '我们在炎热与抑郁的夏天，无法停止抽烟'}
+2020-07-28 15:14:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': '专辑',
+ 'author': '五月天',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s4718016.jpg',
+ 'publish': '2003-11-11',
+ 'score': '9.0',
+ 'style': '摇滚',
+ 'title': '时光机'}
+2020-07-28 15:14:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': '专辑',
+ 'author': '孙燕姿',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s4067651.jpg',
+ 'publish': '2000-06-08',
+ 'score': '9.0',
+ 'style': '流行',
+ 'title': 'Yan Zi'}
+2020-07-28 15:14:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': 'EP',
+ 'author': '陈奕迅',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s4217513.jpg',
+ 'publish': '2010-03-12',
+ 'score': '8.7',
+ 'style': '流行',
+ 'title': 'Time Flies'}
+2020-07-28 15:14:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': '单曲',
+ 'author': '陈绮贞',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s3164468.jpg',
+ 'publish': '2008-07-13',
+ 'score': '8.6',
+ 'style': '流行',
+ 'title': '失败者的飞翔'}
+2020-07-28 15:14:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.douban.com/top250?start=125> (referer: https://music.douban.com/top250?start=100)
+2020-07-28 15:14:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': '专辑',
+ 'author': '田馥甄',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s6884320.jpg',
+ 'publish': '2011-09-02',
+ 'score': '8.0',
+ 'style': '流行',
+ 'title': 'My Love'}
+2020-07-28 15:14:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': '专辑',
+ 'author': '梁静茹',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s1876827.jpg',
+ 'publish': '2006-10-06',
+ 'score': '8.1',
+ 'style': '流行',
+ 'title': '亲亲'}
+2020-07-28 15:14:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': '演唱会/Live',
+ 'author': '陈绮贞',
+ 'disc': 'CD DVD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s2377978.jpg',
+ 'publish': '2007-05-18',
+ 'score': '9.2',
+ 'style': '暂无',
+ 'title': '花的姿态：演唱会经典实录'}
+2020-07-28 15:14:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': '选集',
+ 'author': '王菲',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s2951748.jpg',
+ 'publish': '2002',
+ 'score': '9.4',
+ 'style': '流行',
+ 'title': '你王菲所以我王菲'}
+2020-07-28 15:14:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': '专辑',
+ 'author': '朴树',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s27208919.jpg',
+ 'publish': '1999-1',
+ 'score': '9.1',
+ 'style': '流行',
+ 'title': '我去2000年'}
+2020-07-28 15:14:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': 'EP',
+ 'author': '陈奕迅',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s4644120.jpg',
+ 'publish': '2011-02-22',
+ 'score': '8.6',
+ 'style': '流行',
+ 'title': 'Stranger Under My Skin'}
+2020-07-28 15:14:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': '专辑',
+ 'author': 'GALA',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s1629838.jpg',
+ 'publish': '2004',
+ 'score': '8.7',
+ 'style': '摇滚',
+ 'title': 'Young For You'}
+2020-07-28 15:14:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': '专辑',
+ 'author': 'Norah Jones',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s4714568.jpg',
+ 'publish': '2002',
+ 'score': '8.8',
+ 'style': '爵士',
+ 'title': 'Come Away with Me'}
+2020-07-28 15:14:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': '专辑',
+ 'author': '孙燕姿',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s3151869.jpg',
+ 'publish': '2002年1月',
+ 'score': '8.9',
+ 'style': '流行',
+ 'title': '自选集'}
+2020-07-28 15:14:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': '单曲',
+ 'author': '朴树',
+ 'disc': '数字(Digital)',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s27326029.jpg',
+ 'publish': '2014-07-16',
+ 'score': '8.9',
+ 'style': '暂无',
+ 'title': '平凡之路'}
+2020-07-28 15:14:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': '专辑',
+ 'author': '李宗盛 Jonathan',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2891182.jpg',
+ 'publish': '2007-09-28',
+ 'score': '9.5',
+ 'style': '流行',
+ 'title': '理性与感性 作品音乐会'}
+2020-07-28 15:14:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': '专辑',
+ 'author': '陈奕迅',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s3947069.jpg',
+ 'publish': '2007-04-24',
+ 'score': '8.7',
+ 'style': '流行',
+ 'title': '认了吧'}
+2020-07-28 15:14:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': 'EP',
+ 'author': '曹方',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s2755385.jpg',
+ 'publish': '2007-11-20',
+ 'score': '8.5',
+ 'style': '流行',
+ 'title': '比天空还远'}
+2020-07-28 15:14:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': '专辑',
+ 'author': 'Green Day',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3727625.jpg',
+ 'publish': '2009-05-15',
+ 'score': '8.5',
+ 'style': '摇滚',
+ 'title': '21st Century Breakdown'}
+2020-07-28 15:14:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': '专辑',
+ 'author': '窦唯',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3081692.jpg',
+ 'publish': '1994-10',
+ 'score': '9.2',
+ 'style': '摇滚',
+ 'title': '黑梦'}
+2020-07-28 15:14:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': '专辑',
+ 'author': '張懸',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s11174008.jpg',
+ 'publish': '2012-08-10',
+ 'score': '8.7',
+ 'style': '流行',
+ 'title': '神的游戏'}
+2020-07-28 15:14:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': '专辑',
+ 'author': 'My Little Airport',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s4057285.jpg',
+ 'publish': '2009-11-20',
+ 'score': '8.1',
+ 'style': '流行',
+ 'title': '介乎法國與旺角的詩意'}
+2020-07-28 15:14:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=100>
+{'album': '专辑',
+ 'author': '王菲',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s2749634.jpg',
+ 'publish': '1998',
+ 'score': '9.2',
+ 'style': '流行',
+ 'title': '唱游'}
+2020-07-28 15:14:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': 'Soundtrack',
+ 'author': '周杰倫,Terdsak Janpan,詹宇豪,陳承麒,黃婉琦,姚蘇蓉,黃俊郎,江語晨,長榮交響樂團',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s2652097.jpg',
+ 'publish': '2007-08-13',
+ 'score': '8.7',
+ 'style': '原声',
+ 'title': '不能说的秘密'}
+2020-07-28 15:14:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': '专辑',
+ 'author': '梁静茹 Fish',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1966952.jpg',
+ 'publish': '2005-9-16',
+ 'score': '8.2',
+ 'style': '流行',
+ 'title': '丝路'}
+2020-07-28 15:14:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': 'Import',
+ 'author': 'James Blunt',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2609413.jpg',
+ 'publish': '2007-09-18',
+ 'score': '8.5',
+ 'style': '流行',
+ 'title': 'All The Lost Souls'}
+2020-07-28 15:14:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': '专辑',
+ 'author': 'F.I.R.,飞儿乐团',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s4124010.jpg',
+ 'publish': '2004-04-29',
+ 'score': '8.6',
+ 'style': '流行',
+ 'title': 'F.I.R.'}
+2020-07-28 15:14:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': '专辑',
+ 'author': '陈奕迅',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3969572.jpg',
+ 'publish': '2009-09-23',
+ 'score': '7.7',
+ 'style': '流行',
+ 'title': '上五楼的快活'}
+2020-07-28 15:14:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': '专辑',
+ 'author': 'Linkin Park',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2665031.jpg',
+ 'publish': '2007-05-15',
+ 'score': '8.2',
+ 'style': '摇滚',
+ 'title': 'Minutes to Midnight'}
+2020-07-28 15:14:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': '专辑',
+ 'author': '蔡健雅,Tanya',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s27067658.jpg',
+ 'publish': '2007-10-19',
+ 'score': '8.6',
+ 'style': '流行',
+ 'title': 'GOODBYE & HELLO'}
+2020-07-28 15:14:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': '单曲',
+ 'author': 'Adele',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s4689205.jpg',
+ 'publish': '2011-01-24',
+ 'score': '9.5',
+ 'style': '放克/灵歌/R&B',
+ 'title': 'Someone Like You'}
+2020-07-28 15:14:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': 'EP',
+ 'author': '苏打绿',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s4567536.jpg',
+ 'publish': '2006-09-18',
+ 'score': '8.8',
+ 'style': '流行',
+ 'title': '迟到千年'}
+2020-07-28 15:14:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': '专辑',
+ 'author': 'Pink Floyd',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s4415985.jpg',
+ 'publish': '1973',
+ 'score': '9.1',
+ 'style': '摇滚',
+ 'title': 'The Dark Side of the Moon'}
+2020-07-28 15:14:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': '专辑',
+ 'author': '王菲',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s27066361.jpg',
+ 'publish': '2001',
+ 'score': '9.1',
+ 'style': '流行',
+ 'title': '王菲'}
+2020-07-28 15:14:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': '单曲',
+ 'author': '逃跑计划',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s7050455.jpg',
+ 'publish': '2011-04-12',
+ 'score': '9.4',
+ 'style': '摇滚',
+ 'title': '夜空中最亮的星'}
+2020-07-28 15:14:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': '专辑',
+ 'author': 'GALA',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s26743139.jpg',
+ 'publish': '2011-03-24',
+ 'score': '8.8',
+ 'style': '摇滚',
+ 'title': '追梦痴子心'}
+2020-07-28 15:14:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.douban.com/top250?start=150> (referer: https://music.douban.com/top250?start=125)
+2020-07-28 15:14:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': '专辑',
+ 'author': '莫文蔚',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s4425103.jpg',
+ 'publish': '2010-07-26',
+ 'score': '7.9',
+ 'style': '流行',
+ 'title': '宝贝'}
+2020-07-28 15:14:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': '专辑',
+ 'author': '陈奕迅',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s4088274.jpg',
+ 'publish': '2003',
+ 'score': '9.1',
+ 'style': '流行',
+ 'title': '黑白灰'}
+2020-07-28 15:14:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '专辑',
+ 'author': '陈绮贞',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3268875.jpg',
+ 'publish': '2002-08-02',
+ 'score': '9.1',
+ 'style': '流行',
+ 'title': 'Groupies 吉他手'}
+2020-07-28 15:14:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': '专辑',
+ 'author': '宋冬野',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s27029428.jpg',
+ 'publish': '2013-08-26',
+ 'score': '8.7',
+ 'style': '民谣',
+ 'title': '安和桥北'}
+2020-07-28 15:14:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '专辑',
+ 'author': 'The Innocence Mission',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s1506405.jpg',
+ 'publish': '2004',
+ 'score': '8.4',
+ 'style': '民谣',
+ 'title': 'Now The Day Is Over'}
+2020-07-28 15:14:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=125>
+{'album': 'CD IMPORT',
+ 'author': '宇多田ヒカル',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3104656.jpg',
+ 'publish': '2008-05-21',
+ 'score': '9.2',
+ 'style': '流行',
+ 'title': 'Prisoner of Love'}
+2020-07-28 15:14:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': 'Single',
+ 'author': 'Timbaland,OneRepublic',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s6780751.jpg',
+ 'publish': '2007-11-06',
+ 'score': '9.2',
+ 'style': '放克/灵歌/R&B',
+ 'title': 'Apologize'}
+2020-07-28 15:14:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '选集',
+ 'author': '王菲',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3850703.jpg',
+ 'publish': '2009-06-25',
+ 'score': '9.4',
+ 'style': '流行',
+ 'title': '阿菲正传'}
+2020-07-28 15:14:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '专辑',
+ 'author': '周杰伦',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s4364499.jpg',
+ 'publish': '2010-05-14',
+ 'score': '7.0',
+ 'style': '流行',
+ 'title': '跨时代'}
+2020-07-28 15:14:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '专辑',
+ 'author': '孙燕姿',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s2693584.jpg',
+ 'publish': '2002-5-21',
+ 'score': '8.7',
+ 'style': '流行',
+ 'title': 'Leave'}
+2020-07-28 15:14:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '专辑',
+ 'author': '李志',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s2650727.jpg',
+ 'publish': '2004-12',
+ 'score': '8.8',
+ 'style': '民谣',
+ 'title': '被禁忌的游戏'}
+2020-07-28 15:14:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '专辑',
+ 'author': '陈奕迅',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1933423.jpg',
+ 'publish': '2006',
+ 'score': '9.1',
+ 'style': '流行',
+ 'title': "What's Going On....?"}
+2020-07-28 15:14:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '专辑',
+ 'author': '五月天',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s7021494.jpg',
+ 'publish': '2011-12-20',
+ 'score': '8.9',
+ 'style': '流行',
+ 'title': '第二人生 末日版'}
+2020-07-28 15:14:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '选集',
+ 'author': '陶喆',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3522345.jpg',
+ 'publish': '2003-08-08',
+ 'score': '9.0',
+ 'style': '流行',
+ 'title': '樂之路'}
+2020-07-28 15:14:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '专辑',
+ 'author': 'Maroon 5',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s2374986.jpg',
+ 'publish': '2007-05-22',
+ 'score': '8.2',
+ 'style': '流行',
+ 'title': "It Won't Be Soon Before Long"}
+2020-07-28 15:14:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': 'Bootleg',
+ 'author': '张悬',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s3321977.jpg',
+ 'publish': '2008-10-20',
+ 'score': '8.3',
+ 'style': '民谣',
+ 'title': '如果你冷'}
+2020-07-28 15:14:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '专辑',
+ 'author': '蔡健雅 Tanya Chua',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s1647637.jpg',
+ 'publish': '2003-06-00',
+ 'score': '8.7',
+ 'style': '流行',
+ 'title': '陌生人'}
+2020-07-28 15:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': 'Audio CD',
+ 'author': '王菲',
+ 'disc': '流行',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3631071.jpg',
+ 'publish': '1996',
+ 'score': '9.2',
+ 'style': '暂无',
+ 'title': '浮躁'}
+2020-07-28 15:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '专辑',
+ 'author': '自然卷',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1446010.jpg',
+ 'publish': '2004',
+ 'score': '8.2',
+ 'style': '民谣',
+ 'title': "C'est La Vie"}
+2020-07-28 15:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '专辑',
+ 'author': '刘若英',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s4305186.jpg',
+ 'publish': '2010-04-16',
+ 'score': '7.8',
+ 'style': '流行',
+ 'title': '在一起'}
+2020-07-28 15:14:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.douban.com/top250?start=175> (referer: https://music.douban.com/top250?start=150)
+2020-07-28 15:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '专辑',
+ 'author': 'Rosie Thomas',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s2674348.jpg',
+ 'publish': '2007-03-13',
+ 'score': '8.7',
+ 'style': '民谣',
+ 'title': 'These Friends Of Mine'}
+2020-07-28 15:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '引进版',
+ 'author': '苏打绿',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3076261.jpg',
+ 'publish': '2008',
+ 'score': '9.1',
+ 'style': '暂无',
+ 'title': '陪我歌唱'}
+2020-07-28 15:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': 'EP',
+ 'author': 'Coldplay',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s4087364.jpg',
+ 'publish': '2000-07-03',
+ 'score': '9.3',
+ 'style': '摇滚',
+ 'title': 'Yellow'}
+2020-07-28 15:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '专辑',
+ 'author': 'Lily Allen',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s4716636.jpg',
+ 'publish': '2009-02-09',
+ 'score': '8.5',
+ 'style': '流行',
+ 'title': "It's Not Me, It's You"}
+2020-07-28 15:14:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': '专辑',
+ 'author': 'Keane',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s1492974.jpg',
+ 'publish': '2004',
+ 'score': '8.9',
+ 'style': '摇滚',
+ 'title': 'Hopes And Fears'}
+2020-07-28 15:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': 'Import',
+ 'author': '手嶌葵',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s2969728.jpg',
+ 'publish': '2008-03-05',
+ 'score': '9.2',
+ 'style': '流行',
+ 'title': 'The Rose~I Love Cinemas~'}
+2020-07-28 15:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': '专辑',
+ 'author': '陈奕迅',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3856032.jpg',
+ 'publish': '2005-06-07',
+ 'score': '9.3',
+ 'style': '流行',
+ 'title': 'U87'}
+2020-07-28 15:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '专辑',
+ 'author': '李志',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s4008894.jpg',
+ 'publish': '2009-10-16',
+ 'score': '8.6',
+ 'style': '民谣',
+ 'title': '我爱南京'}
+2020-07-28 15:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': 'Import',
+ 'author': 'Maximilian Hecker',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s1794177.jpg',
+ 'publish': '2005',
+ 'score': '8.8',
+ 'style': '民谣',
+ 'title': 'Lady Sleep'}
+2020-07-28 15:14:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '平装版',
+ 'author': '大乔小乔',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s2616588.jpg',
+ 'publish': '2007-07-12',
+ 'score': '8.2',
+ 'style': '民谣',
+ 'title': '消失的光年'}
+2020-07-28 15:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': 'Soundtrack',
+ 'author': '久石譲(Joe Hisaishi),杉並児童合唱団,井上杏美',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1489321.jpg',
+ 'publish': '1993-12-21',
+ 'score': '9.5',
+ 'style': '原声',
+ 'title': '天空の城ラピュタ サウンドトラック 飛行石の謎'}
+2020-07-28 15:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '专辑',
+ 'author': '范晓萱',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3636124.jpg',
+ 'publish': '2004',
+ 'score': '8.7',
+ 'style': '流行',
+ 'title': '还有别的办法吗'}
+2020-07-28 15:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': '专辑',
+ 'author': '崔健',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s8868552.jpg',
+ 'publish': '1989',
+ 'score': '9.2',
+ 'style': '摇滚',
+ 'title': '新长征路上的摇滚'}
+2020-07-28 15:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '专辑',
+ 'author': '卡奇社',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2378153.jpg',
+ 'publish': '2007-04-20',
+ 'score': '8.1',
+ 'style': '流行',
+ 'title': '日光倾城'}
+2020-07-28 15:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': '专辑',
+ 'author': '棉花糖,katncandix2',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s4715963.jpg',
+ 'publish': '2009-05-01',
+ 'score': '7.9',
+ 'style': '民谣',
+ 'title': '小飞行'}
+2020-07-28 15:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=150>
+{'album': '专辑',
+ 'author': '冯曦妤',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3350764.jpg',
+ 'publish': '2008-11-20',
+ 'score': '8.4',
+ 'style': '流行',
+ 'title': 'A Little Love'}
+2020-07-28 15:14:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': '专辑',
+ 'author': '好妹妹乐队',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s11095208.jpg',
+ 'publish': '2012-07-01',
+ 'score': '8.8',
+ 'style': '民谣',
+ 'title': '春生'}
+2020-07-28 15:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': '专辑',
+ 'author': '陈绮贞',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3821060.jpg',
+ 'publish': '1998-07-14',
+ 'score': '9.0',
+ 'style': '民谣',
+ 'title': '讓我想一想'}
+2020-07-28 15:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': '专辑',
+ 'author': '方大同',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2839973.jpg',
+ 'publish': '2007-12-28',
+ 'score': '8.3',
+ 'style': '放克/灵歌/R&B',
+ 'title': '未来'}
+2020-07-28 15:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': '专辑',
+ 'author': '方大同',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1981880.jpg',
+ 'publish': '2006-12',
+ 'score': '8.6',
+ 'style': '流行',
+ 'title': '爱爱爱'}
+2020-07-28 15:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': '专辑',
+ 'author': '逃跑计划',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s28104019.jpg',
+ 'publish': '2011-12-31',
+ 'score': '9.0',
+ 'style': '摇滚',
+ 'title': '世界'}
+2020-07-28 15:14:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': '专辑',
+ 'author': '盧廣仲,卢广仲',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s4039256.jpg',
+ 'publish': '2009-10-30',
+ 'score': '7.8',
+ 'style': '民谣',
+ 'title': '七天'}
+2020-07-28 15:14:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': 'Extra tracks',
+ 'author': 'Nirvana',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3020073.jpg',
+ 'publish': '2002-10-29',
+ 'score': '9.2',
+ 'style': '摇滚',
+ 'title': 'Nirvana'}
+2020-07-28 15:14:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.douban.com/top250?start=200> (referer: https://music.douban.com/top250?start=175)
+2020-07-28 15:14:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': '专辑',
+ 'author': 'Coldplay',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s8904216.jpg',
+ 'publish': '2002',
+ 'score': '8.6',
+ 'style': '摇滚',
+ 'title': 'A Rush of  Blood to the Head'}
+2020-07-28 15:14:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': '专辑',
+ 'author': 'The Velvet Underground,Nico',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1883423.jpg',
+ 'publish': '1967-04',
+ 'score': '9.0',
+ 'style': '摇滚',
+ 'title': 'The Velvet Underground & Nico'}
+2020-07-28 15:14:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': 'Single',
+ 'author': 'Eminem,Rihanna',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s4420058.jpg',
+ 'publish': '2010-08-20',
+ 'score': '9.3',
+ 'style': '说唱',
+ 'title': 'Love The Way You Lie'}
+2020-07-28 15:14:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '专辑',
+ 'author': '梁静茹',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s1412559.jpg',
+ 'publish': '2003年3月',
+ 'score': '8.9',
+ 'style': '流行',
+ 'title': '恋爱的力量'}
+2020-07-28 15:14:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': '专辑',
+ 'author': '王菲',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3681285.jpg',
+ 'publish': '1994',
+ 'score': '9.3',
+ 'style': '流行',
+ 'title': '天空'}
+2020-07-28 15:14:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '专辑',
+ 'author': 'Suede',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s1496506.jpg',
+ 'publish': '1993',
+ 'score': '8.9',
+ 'style': '摇滚',
+ 'title': 'Suede'}
+2020-07-28 15:14:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': 'Import',
+ 'author': 'Original Soundtrack',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s4194004.jpg',
+ 'publish': '2009-03-30',
+ 'score': '9.2',
+ 'style': '暂无',
+ 'title': 'The Boat That Rocked'}
+2020-07-28 15:14:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '专辑',
+ 'author': 'Radiohead',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s4713649.jpg',
+ 'publish': '1995',
+ 'score': '9.1',
+ 'style': '摇滚',
+ 'title': 'The Bends'}
+2020-07-28 15:14:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': '专辑',
+ 'author': 'Oasis',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1944493.jpg',
+ 'publish': '1995',
+ 'score': '9.2',
+ 'style': '摇滚',
+ 'title': "(What's The Story) Morning Glory?"}
+2020-07-28 15:14:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '专辑',
+ 'author': '林海',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s4716282.jpg',
+ 'publish': '2004',
+ 'score': '9.3',
+ 'style': '轻音乐',
+ 'title': '琵琶相'}
+2020-07-28 15:14:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': '单曲',
+ 'author': '陈绮贞',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s2144095.jpg',
+ 'publish': '2007-02-08',
+ 'score': '8.7',
+ 'style': '民谣',
+ 'title': 'PUSSY'}
+2020-07-28 15:14:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '专辑',
+ 'author': '陈奕迅',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s6988468.jpg',
+ 'publish': '2011-11-11',
+ 'score': '8.0',
+ 'style': '流行',
+ 'title': '？'}
+2020-07-28 15:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': '专辑',
+ 'author': 'Salyu',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s2714357.jpg',
+ 'publish': '2001',
+ 'score': '9.0',
+ 'style': '原声',
+ 'title': '呼吸'}
+2020-07-28 15:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '专辑',
+ 'author': '彭坦',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s2616115.jpg',
+ 'publish': '2007-07-23',
+ 'score': '8.0',
+ 'style': '流行',
+ 'title': '少年故事'}
+2020-07-28 15:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': '专辑',
+ 'author': 'Evanescence',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2189392.jpg',
+ 'publish': '2003',
+ 'score': '8.5',
+ 'style': '摇滚',
+ 'title': 'Fallen'}
+2020-07-28 15:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '专辑',
+ 'author': '雷光夏',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1960062.jpg',
+ 'publish': '2006-12-01',
+ 'score': '8.8',
+ 'style': '民谣',
+ 'title': '黑暗之光'}
+2020-07-28 15:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': '专辑',
+ 'author': '黑豹',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1401153.jpg',
+ 'publish': '1992-12-01',
+ 'score': '9.1',
+ 'style': '摇滚',
+ 'title': '黑豹'}
+2020-07-28 15:14:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '国语',
+ 'author': '范晓萱',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s1432740.jpg',
+ 'publish': '1999-11-1',
+ 'score': '8.7',
+ 'style': '流行',
+ 'title': '我要我们在一起'}
+2020-07-28 15:14:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=175>
+{'album': '视频',
+ 'author': '苏打绿',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s4462549.jpg',
+ 'publish': '2010-08-27',
+ 'score': '8.8',
+ 'style': '流行',
+ 'title': '十年一刻'}
+2020-07-28 15:14:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '专辑',
+ 'author': '五月天',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s1945209.jpg',
+ 'publish': '2001-07-06',
+ 'score': '9.2',
+ 'style': '摇滚',
+ 'title': '人生海海'}
+2020-07-28 15:14:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': 'Import',
+ 'author': 'Owl City',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3409351.jpg',
+ 'publish': '2008-03-18',
+ 'score': '8.4',
+ 'style': '流行',
+ 'title': "Maybe I'm Dreaming"}
+2020-07-28 15:14:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '专辑',
+ 'author': '李志',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s26537631.jpg',
+ 'publish': '2009-01-22',
+ 'score': '9.0',
+ 'style': '民谣',
+ 'title': '工体东路没有人'}
+2020-07-28 15:14:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': 'Enhanced',
+ 'author': 'The Beatles',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s1410146.jpg',
+ 'publish': '1990-10-25',
+ 'score': '9.3',
+ 'style': '摇滚',
+ 'title': 'Let It Be'}
+2020-07-28 15:14:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': 'Import',
+ 'author': 'Lily Allen',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s2824792.jpg',
+ 'publish': '2006',
+ 'score': '8.3',
+ 'style': '流行',
+ 'title': 'Alright,Still'}
+2020-07-28 15:14:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '专辑',
+ 'author': '林宥嘉',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s10385947.jpg',
+ 'publish': '2012-06-22',
+ 'score': '7.9',
+ 'style': '流行',
+ 'title': '大小說家'}
+2020-07-28 15:14:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.douban.com/top250?start=225> (referer: https://music.douban.com/top250?start=200)
+2020-07-28 15:14:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '专辑',
+ 'author': '牛奶@咖啡',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s2975545.jpg',
+ 'publish': '2008-03-18',
+ 'score': '7.6',
+ 'style': '流行',
+ 'title': '越长大越孤单'}
+2020-07-28 15:14:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '专辑',
+ 'author': '梁静茹',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s3595798.jpg',
+ 'publish': '2004',
+ 'score': '8.0',
+ 'style': '流行',
+ 'title': '燕尾蝶'}
+2020-07-28 15:14:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '专辑',
+ 'author': '戴佩妮',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3780711.jpg',
+ 'publish': '2009-05-16',
+ 'score': '7.6',
+ 'style': '流行',
+ 'title': '原谅我就是这样的女生'}
+2020-07-28 15:14:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': '专辑',
+ 'author': 'Amy Winehouse',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s2146936.jpg',
+ 'publish': '2006-10-30',
+ 'score': '8.5',
+ 'style': '放克/灵歌/R&B',
+ 'title': 'Back To Black'}
+2020-07-28 15:14:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '单曲',
+ 'author': '王菲',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s4185764.jpg',
+ 'publish': '2010-11-05',
+ 'score': '9.2',
+ 'style': '民谣',
+ 'title': '传奇'}
+2020-07-28 15:14:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': 'Demo',
+ 'author': '陈绮贞',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s4571919.jpg',
+ 'publish': '2001-11-09',
+ 'score': '9.1',
+ 'style': '流行',
+ 'title': 'Demo 3'}
+2020-07-28 15:14:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '专辑',
+ 'author': 'Daniel Powter',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s3273497.jpg',
+ 'publish': '2008-10-14',
+ 'score': '8.3',
+ 'style': '流行',
+ 'title': 'Under the Radar'}
+2020-07-28 15:14:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': '专辑',
+ 'author': '孙燕姿',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s27220328.jpg',
+ 'publish': '2014-02-27',
+ 'score': '8.4',
+ 'style': '流行',
+ 'title': '克卜勒'}
+2020-07-28 15:14:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '视频',
+ 'author': '五月天',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s4713371.jpg',
+ 'publish': '2006',
+ 'score': '9.2',
+ 'style': '流行',
+ 'title': '知足 MV / Karaoke DVD'}
+2020-07-28 15:14:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': '专辑',
+ 'author': 'Mariah Carey',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s2982879.jpg',
+ 'publish': '2008-04-16',
+ 'score': '8.5',
+ 'style': '流行',
+ 'title': 'E=MC²'}
+2020-07-28 15:14:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '专辑',
+ 'author': '曲婉婷',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s11176273.jpg',
+ 'publish': '2012-07-01',
+ 'score': '7.7',
+ 'style': '流行',
+ 'title': '我的歌声里'}
+2020-07-28 15:14:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': '单曲',
+ 'author': 'Damien Rice',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3341606.jpg',
+ 'publish': '2006-11-27',
+ 'score': '9.4',
+ 'style': '民谣',
+ 'title': '9 Crimes'}
+2020-07-28 15:14:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '专辑',
+ 'author': '王菲',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3336530.jpg',
+ 'publish': '1997-09-30',
+ 'score': '9.2',
+ 'style': '流行',
+ 'title': '王菲'}
+2020-07-28 15:14:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': '专辑',
+ 'author': '陈珊妮',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3285190.jpg',
+ 'publish': '2008-11-22',
+ 'score': '8.2',
+ 'style': '流行',
+ 'title': '如果有一件事是重要的'}
+2020-07-28 15:14:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '专辑',
+ 'author': '汪峰',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s3910069.jpg',
+ 'publish': '2009-07-25',
+ 'score': '8.7',
+ 'style': '摇滚',
+ 'title': '信仰在空中飘扬'}
+2020-07-28 15:14:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': '专辑',
+ 'author': '郑钧',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3666296.jpg',
+ 'publish': '1994',
+ 'score': '8.8',
+ 'style': '摇滚',
+ 'title': '赤裸裸'}
+2020-07-28 15:14:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '专辑',
+ 'author': '莫文蔚',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s3944348.jpg',
+ 'publish': '2002-04-29',
+ 'score': '8.7',
+ 'style': '流行',
+ 'title': '[i]'}
+2020-07-28 15:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': '选集',
+ 'author': '张震岳',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3899296.jpg',
+ 'publish': '2004-06-24',
+ 'score': '9.0',
+ 'style': '流行',
+ 'title': '阿岳正传'}
+2020-07-28 15:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=200>
+{'album': '专辑',
+ 'author': 'Maroon 5',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s2382869.jpg',
+ 'publish': '2002',
+ 'score': '8.5',
+ 'style': '流行',
+ 'title': 'Songs About Jane'}
+2020-07-28 15:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': '专辑',
+ 'author': '朱玫玲,董運昌,王雁盟,何真真',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s1416778.jpg',
+ 'publish': '2004/04/26',
+ 'score': '9.1',
+ 'style': '暂无',
+ 'title': '3颗猫饼干'}
+2020-07-28 15:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': 'Single',
+ 'author': 'Green Day',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s4468079.jpg',
+ 'publish': '2009-07-14',
+ 'score': '9.2',
+ 'style': '流行',
+ 'title': '21 Guns'}
+2020-07-28 15:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': '专辑',
+ 'author': '蔡依林 Jolin Tsai',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s1506028.jpg',
+ 'publish': '2003-03-07',
+ 'score': '8.2',
+ 'style': '流行',
+ 'title': '看我72变'}
+2020-07-28 15:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': '专辑',
+ 'author': '五月天',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s7018733.jpg',
+ 'publish': '2011-12-20',
+ 'score': '9.0',
+ 'style': '流行',
+ 'title': '第二人生 明日版'}
+2020-07-28 15:14:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': '专辑',
+ 'author': 'Oasis',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s4714001.jpg',
+ 'publish': '1994-08-30',
+ 'score': '9.0',
+ 'style': '摇滚',
+ 'title': 'Definitely Maybe'}
+2020-07-28 15:14:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': '专辑',
+ 'author': '宇多田ヒカル',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s1490767.jpg',
+ 'publish': '1999',
+ 'score': '9.1',
+ 'style': '流行',
+ 'title': 'First Love'}
+2020-07-28 15:14:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': '专辑',
+ 'author': '张惠妹',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3856684.jpg',
+ 'publish': '2009-06-26',
+ 'score': '7.7',
+ 'style': '流行',
+ 'title': '阿密特'}
+2020-07-28 15:14:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': '专辑',
+ 'author': '王力宏 Leehom Wang',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3485794.jpg',
+ 'publish': '2008-12-26',
+ 'score': '7.1',
+ 'style': '流行',
+ 'title': '心·跳'}
+2020-07-28 15:14:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': '专辑',
+ 'author': 'The xx',
+ 'disc': 'CD',
+ 'pic_url': 'https://img9.doubanio.com/view/subject/s/public/s3962066.jpg',
+ 'publish': '2009-08-17',
+ 'score': '8.7',
+ 'style': '摇滚',
+ 'title': 'xx'}
+2020-07-28 15:14:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': '专辑',
+ 'author': '莫文蔚',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3885892.jpg',
+ 'publish': '2009-06-23',
+ 'score': '8.0',
+ 'style': '流行',
+ 'title': '回蔚'}
+2020-07-28 15:14:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': '专辑',
+ 'author': 'Tizzy Bac',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3751353.jpg',
+ 'publish': '2009-02-13',
+ 'score': '8.1',
+ 'style': '流行',
+ 'title': '如果看見地獄，我就不怕魔鬼'}
+2020-07-28 15:14:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': '专辑',
+ 'author': '五月天',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s27076627.jpg',
+ 'publish': '2003年4月17日',
+ 'score': '9.3',
+ 'style': '流行',
+ 'title': '我们是五月天'}
+2020-07-28 15:14:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': '专辑',
+ 'author': '萧敬腾',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s3885797.jpg',
+ 'publish': '2009-07-17',
+ 'score': '7.7',
+ 'style': '流行',
+ 'title': '王妃'}
+2020-07-28 15:14:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': 'Single',
+ 'author': 'Lady Gaga',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s3598342.jpg',
+ 'publish': 'September 23, 2008',
+ 'score': '8.7',
+ 'style': '流行',
+ 'title': 'Poker Face'}
+2020-07-28 15:14:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': 'CD＋DVD',
+ 'author': '唐朝',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s8903729.jpg',
+ 'publish': '1992-12',
+ 'score': '9.0',
+ 'style': '摇滚',
+ 'title': '唐朝'}
+2020-07-28 15:14:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': 'EP',
+ 'author': '周杰伦',
+ 'disc': 'CD',
+ 'pic_url': 'https://img1.doubanio.com/view/subject/s/public/s3726558.jpg',
+ 'publish': '2003-12-1',
+ 'score': '8.5',
+ 'style': '流行',
+ 'title': '寻找周杰伦'}
+2020-07-28 15:14:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://music.douban.com/top250?start=225>
+{'album': '专辑',
+ 'author': '林俊杰',
+ 'disc': 'CD',
+ 'pic_url': 'https://img3.doubanio.com/view/subject/s/public/s4550552.jpg',
+ 'publish': '2010-12-08',
+ 'score': '7.7',
+ 'style': '流行',
+ 'title': '她说'}
+2020-07-28 15:14:56 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-07-28 15:14:56 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3959,
+ 'downloader/request_count': 11,
+ 'downloader/request_method_count/GET': 11,
+ 'downloader/response_bytes': 81867,
+ 'downloader/response_count': 11,
+ 'downloader/response_status_count/200': 11,
+ 'dupefilter/filtered': 216,
+ 'elapsed_time_seconds': 56.693714,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 7, 28, 7, 14, 56, 89440),
+ 'item_scraped_count': 250,
+ 'log_count/DEBUG': 262,
+ 'log_count/INFO': 11,
+ 'request_depth_max': 9,
+ 'response_received_count': 11,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 10,
+ 'scheduler/dequeued/memory': 10,
+ 'scheduler/enqueued': 10,
+ 'scheduler/enqueued/memory': 10,
+ 'start_time': datetime.datetime(2020, 7, 28, 7, 13, 59, 395726)}
+2020-07-28 15:14:56 [scrapy.core.engine] INFO: Spider closed (finished)
