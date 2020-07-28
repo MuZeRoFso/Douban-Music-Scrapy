@@ -68,6 +68,9 @@ DOWNLOADER_MIDDLEWARES = {
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'doubanmusic.pipelines.DoubanmusicPipeline': 300,
+    'doubanmusic.pipelines2json.DoubanmusicPipeline': 301,
+    'doubanmusic.pipelines2excel.DoubanmusicPipeline': 302,
+    'doubanmusic.pipelines2mysql.DoubanmusicPipeline': 303,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
