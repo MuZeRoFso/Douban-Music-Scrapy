@@ -11,10 +11,11 @@ class MusicspiderSpider(scrapy.Spider):
     start_urls = ['https://music.douban.com/top250']
 
     def parse(self, response):
-        # item代码块 XPath //div[@class="pl2"]
+        # item代码块 XPath //tr[@class="item"]
         # 标题 XPath td[2]/div[class="pl2"]/a/text()
         # 分类描述 XPath td[2]/div[class="pl2"]/p/text()
         # 评分 XPath td[2]/div[class="pl2"]/div[@class="star clearfix"]/span[@class="rating_nums"]/text()
+        # 图片URL XPath td[1]/a/img/@src
         music_items = response.xpath('//tr[@class="item"]')
         # 循环遍历所有的音乐item，获取其中的标题 分类描述信息 评分数值
         for item in music_items:

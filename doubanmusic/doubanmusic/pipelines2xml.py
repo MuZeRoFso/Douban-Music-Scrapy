@@ -22,7 +22,7 @@ class DoubanmusicPipeline(object):
         self.exporter.start_exporting()
 
     def process_item(self, item, spider):
-        # 提示用户开始到处Json文件
+        # 提示用户开始导出XML文件
         print('>> item写入XML文件......')
         try:
             self.exporter.export_item(item=item)

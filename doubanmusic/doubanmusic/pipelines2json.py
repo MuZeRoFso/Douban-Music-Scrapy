@@ -20,9 +20,8 @@ class DoubanmusicPipeline(object):
         self.exporter.start_exporting()
 
     def process_item(self, item, spider):
-        # 提示用户开始到处Json文件
+        # 提示用户开始导出Json文件
         print('>> item写入Json文件......')
-        # 获取当前时间,并为Json文件命名
         try:
             self.exporter.export_item(item)
         except Exception as err:

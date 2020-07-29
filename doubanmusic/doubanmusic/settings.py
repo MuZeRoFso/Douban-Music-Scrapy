@@ -16,6 +16,7 @@ SPIDER_MODULES = ['doubanmusic.spiders']
 NEWSPIDER_MODULE = 'doubanmusic.spiders'
 
 # 开启log日志功能
+# 定义输出日志的内容等级
 LOG_LEVEL = 'DEBUG'
 TODAY = datetime.now()
 log_file_path = 'Log/scrapy_{}{:0>2}{:0>2}_{:0>2}{:0>2}{:0>2}.log'.format(TODAY.year, TODAY.month, TODAY.day,
