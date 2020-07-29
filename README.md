@@ -1,6 +1,7 @@
 # Douban-Music-Scrapy
 
 _豆瓣音乐top250排行榜 / 爬虫 / Scrapy框架实现_
+_本项目Github链接为_ ___[Douban-Music-Scrapy](https://github.com/MuZeRoFso/Douban-Music-Scrapy)___
 
 ---
 #### 初步构建Scrapy项目
