@@ -108,7 +108,6 @@ class DoubanmusicDownloaderMiddleware(object):
 
 
 class IPPOOlS(HttpProxyMiddleware):
-    #  初始化
     def __init__(self, ip=''):
         super().__init__()
         self.ip = ip
@@ -118,11 +117,11 @@ class IPPOOlS(HttpProxyMiddleware):
         self.IPPOOL = []
         # 设定的传输格式是按照\n换行符切分的 因此需要使用split方法切分
         for ipaddr in content.text.split('\n'):
-            self.IPPOOL.append({'ipaddr': ipaddr})
-
+            if len(ipaddr) != 0:
+                self.IPPOOL.append({'ipaddr': ipaddr})
     #  请求处理
     def process_request(self, request, spider):
         #  先随机选择一个IP
         thisip = random.choice(self.IPPOOL)
-        print("当前使用IP是：" + thisip["ipaddr"])
+        print("当前使用IP是: " + thisip["ipaddr"])
         request.meta["proxy"] = "http://" + thisip["ipaddr"]
