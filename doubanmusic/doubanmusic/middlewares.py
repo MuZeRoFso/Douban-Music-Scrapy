@@ -112,9 +112,11 @@ class IPPOOlS(HttpProxyMiddleware):
     def __init__(self, ip=''):
         super().__init__()
         self.ip = ip
+        # url为动态IP代理的API地址，可更换为其他的API
         url = 'http://http.tiqu.alicdns.com/getip3?num=2&type=1&pro=&city=0&yys=0&port=1&pack=111522&ts=0&ys=0&cs=0&lb=4&sb=0&pb=4&mr=1&regions=&gm=4'
         content = requests.get(url=url)
         self.IPPOOL = []
+        # 设定的传输格式是按照\n换行符切分的 因此需要使用split方法切分
         for ipaddr in content.text.split('\n'):
             self.IPPOOL.append({'ipaddr': ipaddr})
 
