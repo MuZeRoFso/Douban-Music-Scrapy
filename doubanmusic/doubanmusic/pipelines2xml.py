@@ -17,8 +17,7 @@ class DoubanmusicPipeline(object):
         xmlFileName = 'doubanmusic_' + now + '.xml'
         self.xmlfile = open(self.folderName + '/' + xmlFileName, 'wb')
         # 指定xml输出文件 item_element为根目录下第一级子元素 root_element是根目录名称
-        self.exporter = XmlItemExporter(
-            self.xmlfile, item_element='music', root_element='musicinfo', indent=4)
+        self.exporter = XmlItemExporter(self.xmlfile, item_element='music', root_element='musicinfo', indent=4)
         # 开始输出
         self.exporter.start_exporting()
 

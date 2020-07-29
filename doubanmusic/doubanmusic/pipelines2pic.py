@@ -13,13 +13,13 @@ class DoubanmusicPipeline(object):
         self.folderName = 'output/pic'
 
     def process_item(self, item, spider):
-        print('>>开始下载图片至本地......')
+        print('>> 开始下载图片至本地......')
         # 获取图片url
         pic_url = item['pic_url']
         # 设置图片名字
         pic_type = pic_url.split('.')[-1]
         pic_name = item['title'] + '.' + pic_type
-        print('>>开始下载', pic_name)
+        print('>> 开始下载', pic_name)
         try:
             # 开始下载图片
             urllib.request.urlretrieve(pic_url, self.folderName + "/%s" % pic_name)
