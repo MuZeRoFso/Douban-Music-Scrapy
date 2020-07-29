@@ -5,7 +5,11 @@
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
+import random
+
+import requests
 from scrapy import signals
+from scrapy.downloadermiddlewares.httpproxy import HttpProxyMiddleware
 
 
 class DoubanmusicSpiderMiddleware(object):
@@ -101,3 +105,22 @@ class DoubanmusicDownloaderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+
+
+class IPPOOlS(HttpProxyMiddleware):
+    #  初始化
+    def __init__(self, ip=''):
+        super().__init__()
+        self.ip = ip
+        url = 'http://http.tiqu.alicdns.com/getip3?num=2&type=1&pro=&city=0&yys=0&port=1&pack=111522&ts=0&ys=0&cs=0&lb=4&sb=0&pb=4&mr=1&regions=&gm=4'
+        content = requests.get(url=url)
+        self.IPPOOL = []
+        for ipaddr in content.text.split('\n'):
+            self.IPPOOL.append({'ipaddr': ipaddr})
+
+    #  请求处理
+    def process_request(self, request, spider):
+        #  先随机选择一个IP
+        thisip = random.choice(self.IPPOOL)
+        print("当前使用IP是：" + thisip["ipaddr"])
+        request.meta["proxy"] = "http://" + thisip["ipaddr"]

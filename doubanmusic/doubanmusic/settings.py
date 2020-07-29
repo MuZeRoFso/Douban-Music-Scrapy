@@ -69,6 +69,8 @@ DOWNLOADER_MIDDLEWARES = {
     'doubanmusic.middlewares.DoubanmusicDownloaderMiddleware': 543,
     'scrapy.contrib.downloadermiddleware.useragent.UserAgentMiddleware': None,
     'doubanmusic.rotate_useragent.RotateUserAgentMiddleware': 400,
+    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 123,
+    'doubanmusic.middlewares.IPPOOlS': 125
 }
 
 # Enable or disable extensions
